@@ -4,7 +4,7 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--contact-us" class="content-wrapper">
+<section id="contact" class="content-wrapper">
   <div class="contact-info" layout="column" layout-align="center start">
     <!-- <h2>{$_("component.contact_us.title")}</h2> -->
     <h3>{$_("component.contact_us.sub_title")}</h3>
@@ -27,33 +27,33 @@
 </section>
 
 <style>
-#section--contact-us {
+#contact {
   display: grid;
   background: var(--bg-inverted);
 	color: var(--txt-inverted);
 }
-#section--contact-us .contact-info {
+#contact .contact-info {
   display: grid;
 	margin: 3em 2em;
 }
 
-#section--contact-us .contact-option {}
-#section--contact-us .contact-option :global(svg) {
+#contact .contact-option {}
+#contact .contact-option :global(svg) {
   vertical-align: middle;
 	margin: 1rem;
 }
-#section--contact-us a {
+#contact a {
   font-size: 111%;
 	text-decoration-color: var(--link);
 }
-#section--contact-us a:hover {
+#contact a:hover {
   color: var(--link_hover);
 }
-#section--contact-us h2, #section--contact-us h3 {}
-#section--contact-us .grouped {
+#contact h2, #contact h3 {}
+#contact .grouped {
   margin-top: 1em;
 }
-#section--contact-us .grouped p {
+#contact .grouped p {
   margin-top: 0;
 }
 </style>

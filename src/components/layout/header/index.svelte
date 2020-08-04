@@ -1,12 +1,12 @@
 <script>
-  import { goto } from '@sapper/app';
+  import { goto, stores } from '@sapper/app';
 	import { _, locale, locales } from 'svelte-i18n';
 	import { siteSettings } from '../../../store.js';
 	import LangSwitcher from '../langswitch/index.svelte';
 	import SvgLogo from '../../basic/SvgLogo/index.svelte';
 	import SvgIcon from '../../basic/SvgIcon/index.svelte';
-	export let segment;
-	let showMobileMenu = false;
+  let showMobileMenu = false;
+  const { page } = stores();
 </script>
 
 <header id="siteheader" class="header" class:open="{showMobileMenu}">
@@ -14,7 +14,7 @@
 		<SvgLogo size="81" on:click="{() => goto('/')}" />
 		<div class="extra-meta" layout="column">
 			<span class="pink phone">{$siteSettings.phone}</span>
-			<span class="towns">{$siteSettings.cities}</span>
+      <span class="towns">{$siteSettings.cities}</span>
 		</div>
 	</div><!-- /logo-wrapper -->
 
@@ -24,12 +24,13 @@
 		<!-- <img src="@/assets/images/burger.svg" class="burger mobile burger_open" on:click="{() => showMobileMenu = !showMobileMenu}" alt="open mobile menu" />
 		<img src="@/assets/images/burger_close.svg" class="burger mobile burger_close" on:click="{() => showMobileMenu = !showMobileMenu}" alt="open mobile menu" /> -->
 
-    <a class="nav-item first after" class:selected="{segment === 'residential'}" href="residential">{$_('component.header.link.residential')}</a>
-    <a class="nav-item second after" class:selected="{segment === 'commercial'}" href="commercial">{$_('component.header.link.commercial')}</a>
-    <a class="nav-item mobile" class:selected="{segment === 'about'}" href="about">{$_("component.footer.company.about")}</a>
-    <a class="nav-item mobile" class:selected="{segment === 'contact'}" href="about#contact">{$_("component.footer.company.contact")}</a>
-    <a class="nav-item mobile" href="{$siteSettings.googleurl}" target="_blank" rel="noreferrer">{$_("component.footer.connect.google")}</a>
-    <a class="nav-item mobile" href="{$siteSettings.instagurl}" target="_blank" rel="noreferrer">{$_("component.footer.connect.instagram")}</a>
+    <a class="nav-item first after" class:selected="{$page.path === '/residential'}" href="residential">{$_('component.header.link.residential')}</a>
+    <a class="nav-item second after" class:selected="{$page.path === '/commercial'}" href="commercial">{$_('component.header.link.commercial')}</a>
+    <a class="nav-item mobile" class:selected="{$page.path === '/about'}" href="/about">{$_("component.header.link.about")}</a>
+    <a class="nav-item mobile" class:selected="{$page.path === '/contact'}" href="/about#contact">{$_("component.header.link.contact")}</a>
+    <a class="nav-item mobile" class:selected="{$page.path === '/booking'}" href="/booking">{$_("component.header.link.booking")}</a>
+    <!-- <a class="nav-item mobile" href="{$siteSettings.googleurl}" target="_blank" rel="noreferrer">{$_("component.footer.connect.google")}</a> -->
+    <!-- <a class="nav-item mobile" href="{$siteSettings.instagurl}" target="_blank" rel="noreferrer">{$_("component.footer.connect.instagram")}</a> -->
 	</nav><!-- /main-nav -->
 
 	<!-- <LangSwitcher class="language"/> -->

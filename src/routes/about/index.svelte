@@ -19,7 +19,7 @@
       <figure>
         <img src="/assets/van/van_{$locale.startsWith('en') ? 'en' : 'es'}.png" class="company-van" alt="company vehicle" />
       </figure>
-      <h2>{$_("page.about_us.title")}</h2>
+      <!-- <h2>{$_("page.about_us.title")}</h2> -->
       <div class="grouped">
         <h3>{$_("page.about_us.mission.title")}</h3>
         <p>{$_("page.about_us.mission.p_1")}</p>
@@ -46,9 +46,7 @@
 
 <style>
 #section--about-us {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  display: grid;
 }
 #section--about-us .main-content {
   margin: 9em 1em 3em 1em;

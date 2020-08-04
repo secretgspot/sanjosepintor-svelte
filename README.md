@@ -28,8 +28,11 @@ Site rebuilt using svelte.
 
 ## TODO
 
-- [ ] Map Filter
-- [ ] Store across pages (sapper/store?)
-- [ ] LocalStorage for some of the settings
+- [ ] Booking form, simplify js, check css
+- [ ] SVG Icons appear large on android phone vs local chrome tests
+- [x] Header links to have segment that affects link decoration
+- [ ] Header Nav, fix selected indicator
+- [x] Migrate Privacy and Terms pages
+- [ ] Translate Privacy and Terms pages
 
 ### Notes

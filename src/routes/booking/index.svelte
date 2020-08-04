@@ -8,6 +8,7 @@
   import SvgIcon from '../../components/basic/SvgIcon/index.svelte';
 
   let message = false;
+  let isProcessing = false;
   let form;
   let btnSubmit;
   let forma = {
@@ -105,9 +106,10 @@
         document.getElementById('email-invalid').style.display = 'block';
         return false;
       } else {
-        btnSubmit.disabled = true;
-        btnSubmit.classList.add('disabled');
-        btnSubmit.innerHTML = "...";
+        isProcessing = true;
+        // btnSubmit.disabled = true;
+        // btnSubmit.classList.add('disabled');
+        // btnSubmit.innerHTML = "...";
         var url = event.target.action;  //
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url);
@@ -179,7 +181,7 @@
   {#if !message}
   <form bind:this="{form}" id="gform" class="content-wrapper" name="quoteForm"
         method="post"
-        action="https://script.google.com/macros/s/AKfycbwvVjXFteNsBZkRNCMfIRFMUjAfTjGdsxfrAMeejgMXz3PvUm8/exec"
+        action="https://SSSscript.google.com/macros/s/AKfycbwvVjXFteNsBZkRNCMfIRFMUjAfTjGdsxfrAMeejgMXz3PvUm8/exec"
         novalidate="true">
 
     <!-- QUESTION Where would you like painting? -->
@@ -383,18 +385,16 @@
 
     <!-- BUTTONS -->
     <!-- TODO: Fix buttons to be inline with the rest of the site -->
-    <fieldset>
-      <button type="reset" class="md-button md-raised"
+    <div class="actions">
+      <Button type="reset"
         analytics-on="click"
         analytics-event="Form reset"
-        on:click="{cancelForm}">{$_("page.booking.form.button.reset")}</button>
-      <button class="md-button md-raised md-primary" id="btnSubmit"
-        ng-disabled="quoteForm.$pristine"
+        on:click="{cancelForm}">{$_("page.booking.form.button.reset")}</Button>
+      <Button type="submit" bind:this="{btnSubmit}"
         analytics-on="click"
         analytics-event="Form submitted"
-        bind:this="{btnSubmit}"
-        type="submit">{$_("page.booking.form.button.submit")}</button>
-    </fieldset>
+        disabled={isProcessing}>{$_("page.booking.form.button.submit")}</Button>
+    </div>
 
     <input id="honeypot" type="text" name="honeypot" value="" hidden />
     <input id="language" type="text" name="language" value="{$locale == 'en' ? 'English' : 'Spanish'}" hidden />
@@ -508,7 +508,6 @@
   margin-bottom: 6px;
 }
 #booking input.input-form,
-#booking select,
 #booking textarea {
   height: 42px;
   border: 2px solid var(--border);
@@ -517,16 +516,15 @@
   background: var(--bg-secondary);
   color: var(--txt-primary);
 }
-#booking input.input-form:focus, #booking input.input-form.active,
+/* #booking input.input-form:focus, #booking input.input-form.active,
 #booking select:focus,
 #booking select.active,
 #booking textarea:focus,
 #booking textarea.active {
   outline: none;
   border-color: var(--color-blue);
-}
+} */
 #booking input.input-form:disabled,
-#booking select:disabled,
 #booking textarea:disabled {
   cursor: not-allowed;
   opacity: 0.6;
@@ -535,14 +533,6 @@
   resize: vertical;
   min-height: 117px;
 }
-#booking select {
-  height: 45px;
-  padding: 9px 12px;
-  cursor: pointer;
-}
-#booking select option {
-  font-weight: 300;
-}
 #booking .feedback-form {
   margin-top: 6px;
   color: var(--color-danger);
@@ -550,5 +540,11 @@
 }
 .margin-top {
 	margin-top: 1rem;
+}
+#booking .actions {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: 0;
+	margin: 3em 2em;
 }
 </style>

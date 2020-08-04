@@ -6,10 +6,8 @@
 </script>
 
 <script>
-  // import Nav from '../components/Nav.svelte';
   // import Header from '../components/layout/header/index.svelte';
   import Footer from '../components/layout/footer/index.svelte';
-  export let segment;
 </script>
 
 <style>
@@ -41,12 +39,11 @@
 {#if $isLoading}
   <div class="loading">Loading...</div>
 {:else}
-  <!-- <Header {segment} /> -->
+  <!-- <Header/> -->
 
   <!-- <main> -->
-    <slot />
+    <slot/>
   <!-- </main> -->
 
-  <Footer {segment} />
-  <!-- <Nav {segment} /> -->
+  <Footer/>
 {/if}

@@ -148,6 +148,9 @@
       "link": {
         "residential": "Residencial",
         "commercial": "Comercial",
+        "about": "Nosotros",
+        "contact": "Contáctenos",
+        "booking": "Solicitar",
         "faq": "FAQ",
         "tools": "Herramientas"
       }

@@ -1,12 +1,12 @@
 <script>
-  import { goto } from '@sapper/app';
+  import { goto, stores } from '@sapper/app';
   import { _, locale, locales } from 'svelte-i18n';
   import { siteSettings } from '../../../store.js';
   import LangSwitcher from '../langswitch/index.svelte';
   import SvgLogo from '../../basic/SvgLogo/index.svelte';
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
   import Toucan from '../../basic/Toucan/index.svelte';
-  export let segment;
+  const { page } = stores();
 </script>
 
 <footer id="sitefooter" class="content-wrapper grid-container">
@@ -39,8 +39,8 @@
 			<div class="company column">
 				<div class="col-title">{$_("component.footer.company.title")}</div>
 				<ul>
-					<li><a class:selected="{segment === 'about'}" href="about" class="first after">{$_("component.footer.company.about")}</a></li>
-					<li><a class:selected="{segment === 'contact'}" href="about#contact" class="first after">{$_("component.footer.company.contact")}</a></li>
+					<li><a class:selected="{$page.path === '/about'}" href="about" class="first after">{$_("component.footer.company.about")}</a></li>
+					<li><a class:selected="{$page.path === '/contact'}" href="about#contact" class="first after">{$_("component.footer.company.contact")}</a></li>
 					<!-- <li><a href="/faq">{$_("component.footer.company.faq")}</a></li> -->
 				</ul>
 			</div><!-- END OF COMPANY -->
@@ -48,8 +48,8 @@
 			<div class="services column">
 				<div class="col-title">{$_("component.footer.services.title")}</div>
 				<ul>
-					<li><a class:selected="{segment === 'residential'}" href="residential" class="third after">{$_("component.footer.services.residential")}</a></li>
-					<li><a class:selected="{segment === 'commercial'}" href="commercial" class="third after">{$_("component.footer.services.commercial")}</a></li>
+					<li><a class:selected="{$page.path === '/residential'}" href="residential" class="third after">{$_("component.footer.services.residential")}</a></li>
+					<li><a class:selected="{$page.path === '/commercial'}" href="commercial" class="third after">{$_("component.footer.services.commercial")}</a></li>
 					<!-- <li><a href="/powerwash" class="third after">{$_("component.footer.services.powerwash")}</a></li> -->
 				</ul>
 			</div><!-- END OF SERVICES -->
@@ -67,7 +67,7 @@
 	<div class="bottom-bar">
 		<div class="copyright">
 			<span>{$_("component.footer.copyleft.mark")} {$siteSettings.company}</span>
-			<a class:selected="{segment === 'terms'}" href="terms">{$_("component.footer.terms")}</a> | <a class:selected="{segment === 'privacy'}" href="privacy">{$_("component.footer.privacy")}</a>
+			<a class:selected="{$page.path === '/terms'}" href="terms">{$_("component.footer.terms")}</a> | <a class:selected="{$page.path === '/privacy'}" href="privacy">{$_("component.footer.privacy")}</a>
 		</div>
 
 		<LangSwitcher />
