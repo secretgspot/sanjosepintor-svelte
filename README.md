@@ -31,7 +31,7 @@ Site rebuilt using svelte.
 - [ ] Booking form, simplify js, check css
 - [ ] SVG Icons appear large on android phone vs local chrome tests
 - [x] Header links to have segment that affects link decoration
-- [ ] Header Nav, fix selected indicator
+- [x] Header Nav, fix selected indicator
 - [x] Migrate Privacy and Terms pages
 - [ ] Translate Privacy and Terms pages
 
