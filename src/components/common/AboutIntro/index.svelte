@@ -59,7 +59,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
-  box-shadow: 0px 1px 0px var(--shadow);
+  /* box-shadow: 0px 1px 0px var(--shadow); */
   padding: 1em 0;
   margin: 0;
 }

@@ -25,7 +25,6 @@ JMMMM@M% .dHbbbbHMMMMMMNgMMM#^
 
 Site rebuilt using svelte.
 
-
 ## TODO
 
 - [ ] Booking form, simplify js, check css
@@ -33,6 +32,7 @@ Site rebuilt using svelte.
 - [x] Header links to have segment that affects link decoration
 - [x] Header Nav, fix selected indicator
 - [x] Migrate Privacy and Terms pages
+- [x] Loading screen
 - [ ] Translate Privacy and Terms pages
 
 ### Notes

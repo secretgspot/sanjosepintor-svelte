@@ -7,6 +7,7 @@
 
 <script>
   // import Header from '../components/layout/header/index.svelte';
+  import SvgLogo from '../components/basic/SvgLogo/index.svelte';
   import Footer from '../components/layout/footer/index.svelte';
 </script>
 
@@ -20,30 +21,26 @@
     box-sizing: border-box;
   } */
   .loading {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-family: monospace;
-    font-size: 4rem;
+    background-color: var(--bg-inverted);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 10;
+    color: var(--txt-inverted);
   }
 </style>
 
 {#if $isLoading}
-  <div class="loading">Loading...</div>
+  <div class="loading">
+    <SvgLogo size="81" />
+      <span>Loading..</span>
+  </div>
 {:else}
   <!-- <Header/> -->
-
   <!-- <main> -->
     <slot/>
   <!-- </main> -->
-
   <Footer/>
 {/if}
