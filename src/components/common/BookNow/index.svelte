@@ -90,6 +90,7 @@
 #section--booking h2 {
   cursor: default;
 	margin: 3rem 1rem;
+	text-align: center;
 }
 
 	/* :global(html) {

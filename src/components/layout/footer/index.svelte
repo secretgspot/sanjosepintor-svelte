@@ -122,6 +122,7 @@
 #sitefooter .details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 2em 0 1rem;
 }
 @media screen and (min-width: 768px) {

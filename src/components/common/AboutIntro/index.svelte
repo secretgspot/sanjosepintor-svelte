@@ -100,6 +100,9 @@
   margin-right: 0.6rem;
   color: var(--color-blue);
 }
+#section--about-intro .side-right .meta-info ul {
+  padding: 0;
+}
 
 #section--about-intro .side-right .meta-info ul li {
   display: inline-block;

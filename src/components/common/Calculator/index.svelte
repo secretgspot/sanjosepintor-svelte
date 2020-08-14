@@ -273,6 +273,9 @@
 #section--calculator .right-side fieldset {
   border: 0;
 }
+#section--calculator .right-side h4 {
+	margin: 2rem 0 1rem;
+}
 #section--calculator h3 {
   margin-top: 0.3rem;
   font-size: 2rem;

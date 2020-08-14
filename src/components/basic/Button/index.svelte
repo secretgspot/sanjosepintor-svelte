@@ -21,6 +21,7 @@
     box-shadow: 0px 1px 1px var(--shadow);
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
     flex: 0 1 auto;
     display: flex;
     justify-content: center;

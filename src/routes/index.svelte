@@ -103,6 +103,7 @@
 #home #section--home-hero .text h2 {
   margin: 0;
   font-size: clamp(2rem, 10vw, 4rem);
+  font-weight: bolder;
 }
 #home #section--home-hero .text :global(svg) {
   width: clamp(25px, 10vw, 45px);
