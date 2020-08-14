@@ -7,7 +7,7 @@
 <section id="contact" class="content-wrapper">
   <div class="contact-info" layout="column" layout-align="center start">
     <!-- <h2>{$_("component.contact_us.title")}</h2> -->
-    <h3>{$_("component.contact_us.sub_title")}</h3>
+    <h2>{$_("component.contact_us.sub_title")}</h2>
     <span class="contact-option phone">
       <!-- <img src="@/assets/images/telephone.svg" alt="phone-icon"> -->
       <SvgIcon type="phone" size="36" />
@@ -20,7 +20,7 @@
     </span>
 
     <div class="grouped">
-      <!-- <h3>{$_("component.contact_us.sub_title")}</h3> -->
+      <!-- <h2>{$_("component.contact_us.sub_title")}</h2> -->
       <p>{$_("component.contact_us.p")}</p>
     </div>
   </div>
@@ -37,7 +37,7 @@
 	margin: 3em 2em;
 }
 
-#contact .contact-option {}
+/* #contact .contact-option {} */
 #contact .contact-option :global(svg) {
   vertical-align: middle;
 	margin: 1rem;
@@ -49,7 +49,7 @@
 #contact a:hover {
   color: var(--link_hover);
 }
-#contact h2, #contact h3 {}
+/* #contact h2, #contact h2 {} */
 #contact .grouped {
   margin-top: 1em;
 }

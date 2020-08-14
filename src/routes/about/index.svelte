@@ -21,18 +21,18 @@
       </figure>
       <!-- <h2>{$_("page.about_us.title")}</h2> -->
       <div class="grouped">
-        <h3>{$_("page.about_us.mission.title")}</h3>
+        <h2>{$_("page.about_us.mission.title")}</h2>
         <p>{$_("page.about_us.mission.p_1")}</p>
         <p>{$_("page.about_us.mission.p_2")}</p>
       </div>
 
       <div class="grouped">
-        <h3>{$_("page.about_us.top_rated.title")}</h3>
+        <h2>{$_("page.about_us.top_rated.title")}</h2>
         <p>{$_("page.about_us.top_rated.p")}</p>
       </div>
 
       <div class="grouped">
-        <h3>{$_("page.about_us.guarantee.title")}</h3>
+        <h2>{$_("page.about_us.guarantee.title")}</h2>
         <p>{$_("page.about_us.guarantee.p_1")}</p>
         <p>{$_("page.about_us.guarantee.p_2")}</p>
       </div>
@@ -56,13 +56,11 @@
     margin: 9em 3em 3em 3em;
   }
 }
-#section--about-us h1 {
-  margin-bottom: 2em;
+#section--about-us figure {
+  margin-bottom: 3rem;
 }
 #section--about-us h2 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  color: #16374b;
+  font-weight: bold;
 }
 #section--about-us .grouped {
   margin-bottom: 3em;
