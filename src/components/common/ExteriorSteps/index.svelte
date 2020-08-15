@@ -97,12 +97,13 @@
 	grid-template-columns: 1fr 2fr;
 	grid-row-gap: 1rem;
 }
-#section--exterior-steps .step:last-child {}
+/* #section--exterior-steps .step:last-child {} */
 #section--exterior-steps .step :global(svg) {
-  width: 100%;
-  height: fit-content;
+  /* width: 100%; */
+  /* height: fit-content; */
+  justify-self: center;
 }
 #section--exterior-steps .step .text { margin-right: 1rem; }
-#section--exterior-steps .step .text h3 {}
-#section--exterior-steps .step .text p {}
+/* #section--exterior-steps .step .text h3 {} */
+/* #section--exterior-steps .step .text p {} */
 </style>

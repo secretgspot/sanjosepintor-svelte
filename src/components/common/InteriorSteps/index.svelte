@@ -92,12 +92,11 @@
 	grid-template-columns: 1fr 2fr;
 	grid-row-gap: 1rem;
 }
-#section--interior-steps .step:last-child {}
+/* #section--interior-steps .step:last-child {} */
 #section--interior-steps .step :global(svg) {
-  width: 100%;
-  height: fit-content;
+  justify-self: center;
 }
 #section--interior-steps .step .text { margin-right: 1rem; }
-#section--interior-steps .step .text h3 {}
-#section--interior-steps .step .text p {}
+/* #section--interior-steps .step .text h3 {} */
+/* #section--interior-steps .step .text p {} */
 </style>
