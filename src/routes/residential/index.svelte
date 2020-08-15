@@ -11,7 +11,7 @@
   import ResidentialDetails from '../../components/common/ResidentialDetails/index.svelte';
   import ImageCompare from "../../components/basic/ImageCompare/index.svelte";
   // import BeforeAfter from '../../components/common/BeforeAfter/index.svelte';
-  // import InstagramFeed from '../../components/common/InstagramFeed/index.svelte';
+  import InstagramFeed from '../../components/common/InstagramFeed/index.svelte';
   import BookNow from '../../components/common/BookNow/index.svelte';
 </script>
 
@@ -64,7 +64,7 @@
   <!-- <BeforeAfter before="//placehold.it/600x200/E8117F/FFFFFF"
                after="//placehold.it/600x200/CCCCCC/FFFFFF"/> -->
 
-  <!-- <InstagramFeed/> -->
+  <InstagramFeed/>
 
   <BookNow/>
 </article>
