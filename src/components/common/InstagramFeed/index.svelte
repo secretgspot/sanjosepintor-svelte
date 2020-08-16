@@ -59,6 +59,10 @@
 	grid-auto-flow: dense;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	place-items: center;
+  margin: 0 1rem;
 }
-
+#section--instagram-feed .images .img-zoomable {
+	object-fit: fill;
+	width: 100%;
+}
 </style>

@@ -10,7 +10,6 @@
   import ExteriorSteps from '../../components/common/ExteriorSteps/index.svelte';
   import ResidentialDetails from '../../components/common/ResidentialDetails/index.svelte';
   import ImageCompare from "../../components/basic/ImageCompare/index.svelte";
-  // import BeforeAfter from '../../components/common/BeforeAfter/index.svelte';
   import InstagramFeed from '../../components/common/InstagramFeed/index.svelte';
   import BookNow from '../../components/common/BookNow/index.svelte';
 </script>
@@ -60,9 +59,6 @@
     <span slot="before">BEFORE</span>
     <span slot="after">AFTER</span>
   </ImageCompare>
-
-  <!-- <BeforeAfter before="//placehold.it/600x200/E8117F/FFFFFF"
-               after="//placehold.it/600x200/CCCCCC/FFFFFF"/> -->
 
   <InstagramFeed/>
 

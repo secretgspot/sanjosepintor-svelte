@@ -21,21 +21,19 @@
     box-sizing: border-box;
   } */
   .loading {
-    background-color: var(--bg-inverted);
+    background-color: var(--color-black);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     z-index: 10;
-    color: var(--txt-inverted);
   }
 </style>
 
 {#if $isLoading}
   <div class="loading">
-    <SvgLogo size="81" />
-      <span>Loading..</span>
+    <SvgLogo size="81" animated="{true}" />
   </div>
 {:else}
   <!-- <Header/> -->

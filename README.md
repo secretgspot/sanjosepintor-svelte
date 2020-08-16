@@ -28,9 +28,9 @@ Site rebuilt using svelte.
 ## TODO
 
 - [ ] Booking form, simplify js, check css
-- [x] SVG Icons appear large on android phone vs local chrome tests
-- [x] InstagramFeed
-- [ ] Fix InstagramFeed Grid to be more visually pleasing on mobile
+- [ ] Fix InstagramFeed fetch warning
+- [x] Fix InstagramFeed Grid to be more visually pleasing on mobile
 - [ ] Translate Privacy and Terms pages
+- [x] Loading logo animated
 
 ### Notes

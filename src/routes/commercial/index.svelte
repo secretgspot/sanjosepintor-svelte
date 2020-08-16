@@ -7,7 +7,6 @@
   import SvgIcon from '../../components/basic/SvgIcon/index.svelte';
   import OurOffer from '../../components/common/OurOffer/index.svelte';
   import ImageCompare from "../../components/basic/ImageCompare/index.svelte";
-  // import BeforeAfter from '../../components/common/BeforeAfter/index.svelte';
   import CommercialDetails from '../../components/common/CommercialDetails/index.svelte';
   import Powerwash from '../../components/common/Powerwash/index.svelte';
   import BookNow from '../../components/common/BookNow/index.svelte';
@@ -52,8 +51,6 @@
     <span slot="before">BEFORE</span>
     <span slot="after">AFTER</span>
   </ImageCompare>
-  <!-- <BeforeAfter before="/assets/images/before-after/commercial_before_0.jpg"
-                after="/assets/images/before-after/commercial_after_0.jpg"/> -->
 
   <CommercialDetails/>
 
