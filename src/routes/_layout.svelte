@@ -9,6 +9,7 @@
   // import Header from '../components/layout/header/index.svelte';
   import SvgLogo from '../components/basic/SvgLogo/index.svelte';
   import Footer from '../components/layout/footer/index.svelte';
+  export let waitLocale; // needed? didn't use it before, but realworld example uses let from module
 </script>
 
 <style>

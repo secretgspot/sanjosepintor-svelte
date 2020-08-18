@@ -4,7 +4,7 @@
 	import { siteSettings } from '../../../store.js';
 	import LangSwitcher from '../langswitch/index.svelte';
 	import SvgLogo from '../../basic/SvgLogo/index.svelte';
-	import SvgIcon from '../../basic/SvgIcon/index.svelte';
+	import Hamburger from '../../basic/Hamburger/index.svelte';
   let showMobileMenu = false;
   const { page } = stores();
 </script>
@@ -18,12 +18,9 @@
 		</div>
 	</div><!-- /logo-wrapper -->
 
-  <SvgIcon type="{!showMobileMenu ? 'menu_open' : 'menu_close'}" size="27" on:click="{() => showMobileMenu = !showMobileMenu}" />
+  <Hamburger on:click="{() => showMobileMenu = !showMobileMenu}" isOpen="{showMobileMenu}"/>
 
 	<nav class="main-nav" role="navigation">
-		<!-- <img src="@/assets/images/burger.svg" class="burger mobile burger_open" on:click="{() => showMobileMenu = !showMobileMenu}" alt="open mobile menu" />
-		<img src="@/assets/images/burger_close.svg" class="burger mobile burger_close" on:click="{() => showMobileMenu = !showMobileMenu}" alt="open mobile menu" /> -->
-
     <a class="nav-item first after" class:selected="{$page.path === '/residential'}" href="residential">{$_('component.header.link.residential')}</a>
     <a class="nav-item second after" class:selected="{$page.path === '/commercial'}" href="commercial">{$_('component.header.link.commercial')}</a>
     <a class="nav-item mobile" class:selected="{$page.path === '/about'}" href="/about">{$_("component.header.link.about")}</a>
@@ -89,97 +86,6 @@
 .main-nav .nav-item:last-child {
   border-radius: 0 0 1rem 1rem;
 }
-/* #siteheader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1em;
-  user-select: none;
-  display: grid;
-	grid-template-columns: 1fr auto;
-}
-@media screen and (min-width: 768px) {
-  #siteheader .mobile {
-    display: none !important;
-  }
-}
-#siteheader img.burger_close {
-  display: none;
-}
-#siteheader.open {
-  bottom: 0;
-  background: white;
-  z-index: 9;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  position: fixed;
-}
-#siteheader.open nav.main-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
-}
-#siteheader.open nav.main-nav li {
-  margin: 0;
-  align-self: stretch;
-}
-#siteheader.open img.burger_open {
-  display: none;
-}
-#siteheader.open img.burger_close {
-  display: block;
-}
-#siteheader nav.main-nav {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-#siteheader nav.main-nav img.burger {
-  width: 36px;
-  position: absolute;
-  top: 1em;
-  right: 1em;
-}
-#siteheader nav.main-nav ul {
-  display: none;
-  margin: 0;
-  padding: 0 1em;
-  background: rgba(240, 248, 255, 0.33);
-  border-radius: 3px;
-}
-@media screen and (min-width: 768px) {
-  #siteheader nav.main-nav ul {
-    display: flex;
-  }
-}
-#siteheader nav.main-nav ul li {
-  display: inline-block;
-  margin-bottom: 0;
-}
-#siteheader nav.main-nav li:first-child {
-  margin-left: 0;
-}
-#siteheader nav.main-nav .nav-item {
-  margin-left: 1.45em;
-}
-#siteheader nav.main-nav a {
-  line-height: 39px;
-  font-size: 18px;
-  text-decoration: none;
-  color: #16374b;
-  display: block;
-}
-#siteheader nav.main-nav a:hover {
-  color: #1565c0;
-}
- */
 .selected {
   background-color: var(--bg-inverted);
 	color: var(--txt-inverted);
