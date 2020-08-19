@@ -28,9 +28,8 @@ Site rebuilt using svelte.
 ## TODO
 
 - [ ] Booking form, simplify js, check css
-- [ ] Fix InstagramFeed fetch warning
+- [x] Fix InstagramFeed fetch warning (will that be enough?)
 - [ ] Translate Privacy and Terms pages
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
-- [x] Hamburger menu moved to own component and animated
 
 ### Notes

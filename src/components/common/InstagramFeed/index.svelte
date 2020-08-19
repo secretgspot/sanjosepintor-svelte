@@ -1,8 +1,10 @@
 <script>
+  import { onMount } from 'svelte';
   import { _ } from 'svelte-i18n';
   import Zooming from 'zooming';
+  import SvgLogo from '../../basic/SvgLogo/index.svelte';
 
-	let promise = fetchInstagramPhotos('sanjosepintor');
+	let promise = [];
 
 	async function fetchInstagramPhotos(profileName) {
 		const baseUrl = "https://www.instagram.com";
@@ -17,10 +19,14 @@
 			return pictures;
 		} else {
 			throw new Error(pictures);
-		}
+    }
 	}
 
-	const zoomable = element => (new Zooming().listen(element));
+  const zoomable = element => (new Zooming().listen(element));
+
+  onMount(() => {
+    promise = fetchInstagramPhotos('sanjosepintor');
+  });
 </script>
 
 <section id="section--instagram-feed" class="content-wrapper">
@@ -30,7 +36,9 @@
   </div> -->
 
   {#await promise}
-    <p>...waiting</p>
+    <div class="placeholder">
+      <SvgLogo size="63" animated="{true}"/>
+    </div>
   {:then pictures}
     <div class='images'>
     {#each pictures as picture}
@@ -64,5 +72,11 @@
 #section--instagram-feed .images .img-zoomable {
 	object-fit: fill;
 	width: 100%;
+}
+#section--instagram-feed .placeholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 333px;
 }
 </style>

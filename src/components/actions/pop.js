@@ -1,24 +1,24 @@
 // Adds sparkle on click to elements
 // USAGE: https://svelte.dev/repl/3d2005b7046e440c8e044e51c6dd62d2?version=3.23.2
 
-
 function pop (e) {
-	//console.dir(e);
-	//console.log(e.clientX, e.clientY);
+	let particles = 12;
+	console.dir(e);
+	console.log(e.clientX, e.clientY);
   // Quick check if user clicked the button using a keyboard
   if (e.clientX === 0 && e.clientY === 0) {
     const bbox = e.getBoundingClientRect();
     const x = bbox.left + bbox.width / 2;
     const y = bbox.top + bbox.height / 2;
 		//console.log(x, y);
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < particles; i++) {
       // We call the function createParticle 30 times
       // We pass the coordinates of the button for x & y values
       createParticle(x, y);
     }
   } else {
-    for (let i = 0; i < 30; i++) {
-      // We call the function createParticle 30 times
+    for (let i = 0; i < particles; i++) {
+      // We call the function createParticle 12 times
       // As we need the coordinates of the mouse, we pass them as arguments
       createParticle(e.clientX, e.clientY);
     }
@@ -27,7 +27,7 @@ function pop (e) {
 
 function createParticle (x, y) {
   const particle = document.createElement('particle');
-	//console.log('fired: ', particle);
+	console.log('fired: ', particle);
   document.body.appendChild(particle);
 
   // Calculate a random size from 5px to 25px
