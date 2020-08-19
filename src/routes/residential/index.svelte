@@ -54,10 +54,10 @@
   <ImageCompare
       before="/assets/before-after/residential_before_0.jpg"
       after="/assets/before-after/residential_after_0.jpg"
-      contain={true}
+      contain="{true}"
   >
-    <span slot="before">BEFORE</span>
-    <span slot="after">AFTER</span>
+    <span slot="before">{$_("component.image_compare.before")}</span>
+    <span slot="after">{$_("component.image_compare.after")}</span>
   </ImageCompare>
 
   <InstagramFeed/>

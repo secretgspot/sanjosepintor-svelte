@@ -410,6 +410,11 @@
       "p": "Si llama en horario de oficina, nos contactará instantáneamente. Si envía un correo electrónico, normalmente le responderemos en el mismo día hábil."
     },
 
+    "image_compare": {
+      "before": "ANTES",
+       "after": "DESPUÉS"
+    },
+
     "footer": {
       "moto": "Nosotros pintamos, tú te relajas. Es así de simple.",
       "company": {

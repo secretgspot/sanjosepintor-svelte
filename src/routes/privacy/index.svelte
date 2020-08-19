@@ -68,9 +68,9 @@
         <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
         <p>Examples of Cookies we use:</p>
         <ul>
-          <li><strong>Session Cookies.</strong> We use Session Cookies to operate our Service.</li>
+          <!-- <li><strong>Session Cookies.</strong> We use Session Cookies to operate our Service.</li> -->
           <li><strong>Preference Cookies.</strong> We use Preference Cookies to remember your preferences and various settings.</li>
-          <li><strong>Security Cookies.</strong> We use Security Cookies for security purposes.</li>
+          <!-- <li><strong>Security Cookies.</strong> We use Security Cookies for security purposes.</li> -->
         </ul>
       </div>
 
@@ -79,10 +79,10 @@
         <p>{$siteSettings.company} uses the collected data for various purposes:</p>
         <ul>
           <li>To provide and maintain the Service</li>
-          <li>To notify you about changes to our Service</li>
+          <!-- <li>To notify you about changes to our Service</li> -->
           <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
           <li>To provide customer care and support</li>
-          <li>To provide analysis or valuable information so that we can improve the Service</li>
+          <!-- <li>To provide analysis or valuable information so that we can improve the Service</li> -->
           <li>To monitor the usage of the Service</li>
           <li>To detect, prevent and address technical issues</li>
         </ul>

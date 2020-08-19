@@ -410,6 +410,11 @@
       "p": "If you call during our business hours you'll get through to us instantly. If you email, we'll usually get back to you within the same business day."
     },
 
+    "image_compare": {
+      "before": "BEFORE",
+      "after": "AFTER"
+    },
+
     "footer": {
       "moto": "We paint, you relax. It’s that simple.",
       "company": {

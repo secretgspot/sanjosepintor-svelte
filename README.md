@@ -31,5 +31,6 @@ Site rebuilt using svelte.
 - [ ] Translate Privacy and Terms pages
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
+- [x] ImageCompare colors adjusted for the theme, Privacy/Terms hidden some of the items, Translated ImageCompare labels, InstagramFeed background color set to variable
 
 ### Notes

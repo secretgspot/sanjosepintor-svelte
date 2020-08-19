@@ -22,7 +22,7 @@
     }
 	}
 
-  const zoomable = element => (new Zooming().listen(element));
+  const zoomable = element => (new Zooming({ bgColor: 'var(--bg-primary)' }).listen(element));
 
   onMount(() => {
     promise = fetchInstagramPhotos('sanjosepintor');

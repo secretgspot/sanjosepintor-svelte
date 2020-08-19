@@ -106,7 +106,8 @@
 		height: 100%;
 		position: absolute;
 		transition: opacity .5s;
-		background: rgba(0, 0, 0, .5);
+		background: var(--color-black);
+		filter: opacity(0.5);
 	}
 	.before-label, .after-label {
 		top: 0;
@@ -114,9 +115,13 @@
 		z-index: 25;
 		user-select: none;
 		position: absolute;
+		display: flex;
+		align-items: center;
+		color: var(--color-white);
+		filter: opacity(0.5);
 	}
-	.before-label { left: 0; }
-	.after-label { right: 0; }
+	.before-label { left: 1rem; }
+	.after-label { right: 1rem; }
 	.container:hover > .overlay { opacity: 1; }
 	.handle {
 		z-index: 30;
@@ -130,14 +135,15 @@
 		position: absolute;
 		border-radius: 50px;
 		top: calc(50% - 20px);
-		border: 4px solid white;
+		border: 4px solid var(--color-white);
+		filter: opacity(0.63);
 	}
 	.handle:before, .handle:after {
 		content: "";
 		height: 9999px;
 		position: absolute;
 		left: calc(50% - 2px);
-		border: 2px solid white;
+		border: 2px solid var(--color-white);
 	}
 	.handle:before { top: 40px; }
 	.handle:after { bottom: 40px; }
@@ -152,11 +158,11 @@
 	.arrow-right {
 		left: 23px;
 		bottom: 10px;
-		border-left: 10px solid white;
+		border-left: 10px solid var(--color-white);
 	}
 	.arrow-left {
 		left: 7px;
 		top: 10px;
-		border-right: 10px solid white;
+		border-right: 10px solid var(--color-white);
 	}
 </style>
