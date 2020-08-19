@@ -135,7 +135,7 @@
     // Cancel form
     function cancelForm(event) {
       // message = true;
-      console.log(event);
+      // console.log(event);
       form.reset();
     }
 
