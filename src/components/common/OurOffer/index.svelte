@@ -43,6 +43,12 @@
   list-style-type: "✓ ";
   list-style-position: inside;
 }
+@media screen and (min-width: 768px) {
+  #section--our-offer .offer-list ul {
+    column-count: 2;
+    column-gap: 3rem;
+  }
+}
 #section--our-offer .offer-list ul li { }
 #section--our-offer .offer-list ul li::marker {
   color: var(--color-blue);

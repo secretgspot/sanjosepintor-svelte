@@ -143,17 +143,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 #home #section--home-hero .meta-info ul li {
   display: flex;
-  margin: 0;
-  align-items: center;
-  font-size: 81%;
-  margin: 0 1em;
+	align-items: center;
+	/* font-size: 72%; */
+	margin: 1em;
 }
-#home #section--home-hero .meta-info img {
-  margin: 0 9px 3px;
-  height: 18px;
-  vertical-align: middle;
+#home #section--home-hero .meta-info :global(svg) {
+  vertical-align: top;
+  margin-right: 0.6rem;
+  color: var(--color-blue);
 }
 </style>

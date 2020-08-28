@@ -240,9 +240,12 @@
 
 <style>
 #section--calculator {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  #section--calculator {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 #section--calculator .left-side {
   display: flex;

@@ -21,11 +21,7 @@
 <article id="residential-painting" class="residential">
   <section id="section--residential-painting-hero">
 
-    <div class="content-wrapper hero"
-      layout="column"
-      layout-align-xs="center center"
-      layout-align-sm="center start"
-      layout-align-md="center start">
+    <div class="content-wrapper hero">
 
       <Header/>
 
@@ -67,10 +63,7 @@
 
 <style>
 #residential-painting {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0;
-	padding-bottom: 0;
+  display: grid;
 }
 #residential-painting #section--residential-painting-hero {
   min-height: 600px;
@@ -95,6 +88,18 @@
 #residential-painting #section--residential-painting-hero .text {
   margin: 2em;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #residential-painting #section--residential-painting-hero .text {
+    margin: 6em;
+  }
+  #residential-painting #section--residential-painting-hero .text h1 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  #residential-painting #section--residential-painting-hero .text :global(a) {
+    margin-top: 2rem;
+  }
 }
 #residential-painting :global(#section--beforeafter) {
   padding-top: 0;

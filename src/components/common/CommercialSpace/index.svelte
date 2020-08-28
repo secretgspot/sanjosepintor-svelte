@@ -25,7 +25,12 @@
   display: grid;
 	grid-template-rows: 1fr 1fr;
 }
-
+@media screen and (min-width: 768px) {
+  #section--commercial {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 #section--commercial .left-side {
   display: flex;
   justify-content: center;

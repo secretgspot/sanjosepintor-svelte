@@ -93,7 +93,12 @@
   flex-direction: column;
   padding: 0 1rem 1rem;
 }
-
+@media screen and (min-width: 768px) {
+  #sitefooter .mid-bar {
+    flex-direction: row;
+    padding: 1rem 1rem 1rem;
+  }
+}
 #sitefooter .bottom-bar {
   border-top: 1px solid var(--bg-tertiary);
   padding: 1rem;

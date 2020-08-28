@@ -20,6 +20,12 @@
   display: grid;
 	grid-template-rows: 1fr 1fr;
 }
+@media screen and (min-width: 768px) {
+  #section--moving {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 #section--moving .left-side {
 	background-color: var(--bg-secondary);

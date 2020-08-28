@@ -19,11 +19,7 @@
 <article id="commercial-painting" class="commercial">
   <section id="section--commercial-painting-hero">
 
-    <div class="content-wrapper hero"
-      layout="column"
-      layout-align-xs="center center"
-      layout-align-sm="center start"
-      layout-align-md="center end">
+    <div class="content-wrapper hero">
 
       <Header/>
 
@@ -61,8 +57,7 @@
 
 <style>
 #commercial-painting {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 #commercial-painting #section--commercial-painting-hero {
   min-height: 600px;
@@ -87,6 +82,18 @@
 #commercial-painting #section--commercial-painting-hero .text {
   margin: 2em;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  #commercial-painting #section--commercial-painting-hero .text {
+    margin: 6em;
+  }
+  #commercial-painting #section--commercial-painting-hero .text h1 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  #commercial-painting #section--commercial-painting-hero .text :global(a) {
+    margin-top: 2rem;
+  }
 }
 #commercial-painting :global(#section--beforeafter) {
   padding-top: 0;

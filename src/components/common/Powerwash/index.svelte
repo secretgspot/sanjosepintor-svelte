@@ -20,6 +20,12 @@
   display: grid;
 	grid-template-rows: 1fr 1fr;
 }
+@media screen and (min-width: 768px) {
+  #section--powerwash {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 #section--powerwash .left-side {
   flex: 1 0 auto;

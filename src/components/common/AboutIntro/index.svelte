@@ -37,14 +37,20 @@
 <style>
 #section--about-intro {
   user-select: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  #section--about-intro {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 #section--about-intro .side-left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 1em;
   cursor: default;
 }
@@ -94,6 +100,11 @@
 }
 #section--about-intro .side-right .meta-info {
   margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  #section--about-intro .side-right .meta-info {
+    display: none;
+  }
 }
 #section--about-intro .side-right .meta-info :global(svg) {
   vertical-align: top;

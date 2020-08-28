@@ -61,4 +61,10 @@
 #section--commercial-details .offer-list { margin-bottom: 3rem; }
 #section--commercial-details .offer-list:last-child { margin-bottom: 0; }
 #section--commercial-details .offer-list ul { padding-left: 2rem; }
+@media screen and (min-width: 768px) {
+  #section--commercial-details .offer-list ul {
+    column-count: 2;
+    column-gap: 3rem;
+  }
+}
 </style>
