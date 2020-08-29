@@ -59,6 +59,7 @@
 <style>
 #section--instagram-feed {
   padding: 3rem 0;
+  content-visibility: initial;
 }
 #section--instagram-feed .images {
   display: grid;

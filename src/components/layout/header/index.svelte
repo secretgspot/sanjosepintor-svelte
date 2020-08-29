@@ -40,6 +40,7 @@
 	padding: 1rem;
 	user-select: none;
 	display: grid;
+	z-index: 10;
 }
 #siteheader :global(.burger) {
   position: absolute;
