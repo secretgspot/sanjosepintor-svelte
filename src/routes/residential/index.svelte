@@ -92,6 +92,7 @@
 @media screen and (min-width: 768px) {
   #residential-painting #section--residential-painting-hero .text {
     margin: 6em;
+    font-size: 130%;
   }
   #residential-painting #section--residential-painting-hero .text h1 {
     font-weight: bold;

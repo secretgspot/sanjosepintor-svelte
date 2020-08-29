@@ -89,19 +89,24 @@
 #section--exterior-steps .steps {
 	display: grid;
 	grid-template-rows: 1fr;
-	grid-row-gap: 2rem;
+	row-gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  #section--exterior-steps .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
 }
 
 #section--exterior-steps .step {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-row-gap: 1rem;
+	display: flex;
+  padding: 1rem;
 }
 /* #section--exterior-steps .step:last-child {} */
 #section--exterior-steps .step :global(svg) {
-  /* width: 100%; */
-  /* height: fit-content; */
   justify-self: center;
+  width: 100%;
 }
 #section--exterior-steps .step .text { margin-right: 1rem; }
 /* #section--exterior-steps .step .text h3 {} */

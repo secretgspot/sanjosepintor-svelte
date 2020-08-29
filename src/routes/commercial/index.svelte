@@ -86,6 +86,7 @@
 @media screen and (min-width: 768px) {
   #commercial-painting #section--commercial-painting-hero .text {
     margin: 6em;
+    font-size: 130%;
   }
   #commercial-painting #section--commercial-painting-hero .text h1 {
     font-weight: bold;
