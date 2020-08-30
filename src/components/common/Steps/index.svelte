@@ -4,11 +4,10 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--steps"  class="content-wrapper" layout="row" layout-xs="column" layout-wrap layout-align="center center">
+<section id="section--steps" class="content-wrapper">
   <!-- <h3 flex-xs="grow">{$_("component.steps.title")}</h3> -->
-  <div class="steps" layout="row" layout-xs="column">
-    <div class="step" layout="column" layout-xs="row">
-      <!-- <img class="svg" src="/assets/images/pantone_2.svg" alt="free estimate"> -->
+  <div class="steps">
+    <div class="step">
       <SvgIcon type="step_estimate" size="54" />
       <div class="text">
         <h3>{$_("component.steps.estimate.title")}</h3>
@@ -16,8 +15,7 @@
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="column" layout-xs="row">
-      <!-- <img class="svg" src="/assets/images/design-tool.svg" alt="prepare"> -->
+    <div class="step">
       <SvgIcon type="step_prepare" size="54" />
       <div class="text">
         <h3>{$_("component.steps.preparation.title")}</h3>
@@ -25,8 +23,7 @@
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="column" layout-xs="row">
-      <!-- <img class="svg" src="/assets/images/paint-roller_6.svg" alt="do the job"> -->
+    <div class="step">
       <SvgIcon type="step_job" size="54" />
       <div class="text">
         <h3>{$_("component.steps.job.title")}</h3>
@@ -34,8 +31,7 @@
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="column" layout-xs="row">
-      <!-- <img class="svg" src="/assets/images/broom.svg" alt="clean up"> -->
+    <div class="step">
       <SvgIcon type="step_clean" size="54" />
       <div class="text">
         <h3>{$_("component.steps.cleanup.title")}</h3>

@@ -15,14 +15,14 @@
 
     <!-- <h2 layout-align-gt-xs="end end">{$_("component.about_intro.why")} {$siteSettings.company}?</h2> -->
 
-    <SvgIcon type="seal_100" size="180" />
+    <SvgIcon type="seal_100" size="120" />
   </div>
 
-  <div class="side-right" flex-gt-xs="50">
+  <div class="side-right">
     <p>{$_("component.about_intro.p_1")}</p>
     <p>{$_("component.about_intro.p_2")}</p>
 
-    <div class="meta-info" hide-gt-xs>
+    <div class="meta-info">
       <ul>
         <li><SvgIcon type="star" size="18" />{$_("page.home.hero.bonded")}</li>
         <li><SvgIcon type="star" size="18" />{$_("page.home.hero.trained")}</li>

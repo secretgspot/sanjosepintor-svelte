@@ -4,49 +4,41 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--interior-steps" class="content-wrapper" layout="row" layout-xs="column" layout-wrap>
-  <div class="head-text" flex-xs="grow">
+<section id="section--interior-steps" class="content-wrapper">
+  <div class="head-text">
     <h2>{$_("component.interior_steps.title")}</h2>
     <p>{$_("component.interior_steps.p_1")}</p>
     <p>{$_("component.interior_steps.p_2")}</p>
     <p>{$_("component.interior_steps.p_3")}</p>
   </div>
 
-  <div class="steps"
-    layout="row" layout-xs="column"
-    layout-align-xs="center center"
-    layout-align-gt-xs="space-between start"
-    layout-wrap>
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/pantone_2.svg" alt="set up"> -->
-      <SvgIcon type="one" size="45" />
+  <div class="steps">
+    <div class="step">
+      <SvgIcon type="number" number="1" size="45" />
       <div class="text">
         <h3>{$_("component.interior_steps.setup.title")}</h3>
         <p>{$_("component.interior_steps.setup.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/design-tool.svg" alt="preparation"> -->
-      <SvgIcon type="two" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="2" size="45" />
       <div class="text">
         <h3>{$_("component.interior_steps.preparation.title")}</h3>
         <p>{$_("component.interior_steps.preparation.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/paint-roller_6.svg" alt="paint application"> -->
-      <SvgIcon type="three" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="3" size="45" />
       <div class="text">
         <h3>{$_("component.interior_steps.paint.title")}</h3>
         <p>{$_("component.interior_steps.paint.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/broom.svg" alt="clean up"> -->
-      <SvgIcon type="four" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="4" size="45" />
       <div class="text">
         <h3>{$_("component.interior_steps.cleanup.title")}</h3>
         <p>{$_("component.interior_steps.cleanup.p")}</p>
@@ -54,10 +46,9 @@
     </div> <!-- End of Step -->
   </div> <!-- End of Steps -->
 
-  <div class="head-text" flex-xs="grow">
+  <div class="head-text">
     <h2>{$_("component.interior_steps.wallpaper.title")}</h2>
     <p>{$_("component.interior_steps.wallpaper.p_1")}</p>
-
     <p>{$_("component.interior_steps.wallpaper.p_2")}</p>
   </div>
 </section>
@@ -95,13 +86,14 @@
 }
 
 #section--interior-steps .step {
-	display: flex;
-  padding: 1rem;
+  display: grid;
+	padding: 1rem;
+	grid-template-columns: 1fr 2fr;
 }
 /* #section--interior-steps .step:last-child {} */
 #section--interior-steps .step :global(svg) {
   justify-self: center;
-  width: 100%;
+  /* width: 100%; */
 }
 #section--interior-steps .step .text { margin-right: 1rem; }
 /* #section--interior-steps .step .text h3 {} */

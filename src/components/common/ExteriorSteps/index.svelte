@@ -4,8 +4,8 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--exterior-steps" class="content-wrapper" layout="row" layout-xs="column" layout-wrap>
-  <div class="head-text" flex-xs="grow">
+<section id="section--exterior-steps" class="content-wrapper">
+  <div class="head-text">
     <h2>{$_("component.exterior_steps.title")}</h2>
     <p>{$_("component.exterior_steps.p_1")}</p>
     <p>{$_("component.exterior_steps.p_2")}</p>
@@ -15,50 +15,41 @@
     <p>{$_("component.exterior_steps.p_6")}</p>
   </div>
 
-  <div class="steps"
-    layout="row" layout-xs="column"
-    layout-align-xs="center center"
-    layout-align-gt-xs="space-between start"
-    layout-wrap>
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/surface-wash.svg" alt="surface wash"> -->
-      <SvgIcon type="one" size="45" />
+  <div class="steps">
+    <div class="step">
+      <SvgIcon type="number" number="1" size="45" />
       <div class="text">
         <h3>{$_("component.exterior_steps.wash.title")}</h3>
         <p>{$_("component.exterior_steps.wash.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/design-tool.svg" alt="surface preparation"> -->
-      <SvgIcon type="two" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="2" size="45" />
       <div class="text">
         <h3>{$_("component.exterior_steps.preparation.title")}</h3>
         <p>{$_("component.exterior_steps.preparation.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/paint-roller_6.svg" alt="paint application"> -->
-      <SvgIcon type="three" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="3" size="45" />
       <div class="text">
         <h3>{$_("component.exterior_steps.paint.title")}</h3>
         <p>{$_("component.exterior_steps.paint.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/broom.svg" alt="clean up"> -->
-      <SvgIcon type="four" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="4" size="45" />
       <div class="text">
         <h3>{$_("component.exterior_steps.cleanup.title")}</h3>
         <p>{$_("component.exterior_steps.cleanup.p")}</p>
       </div>
     </div> <!-- End of Step -->
 
-    <div class="step" layout="row">
-      <!-- <img hide-xs class="svg" src="/assets/images/eye.svg" alt="inspection"> -->
-      <SvgIcon type="five" size="45" />
+    <div class="step">
+      <SvgIcon type="number" number="5" size="45" />
       <div class="text">
         <h3>{$_("component.exterior_steps.inspection.title")}</h3>
         <p>{$_("component.exterior_steps.inspection.p")}</p>
@@ -100,13 +91,14 @@
 }
 
 #section--exterior-steps .step {
-	display: flex;
-  padding: 1rem;
+  display: grid;
+	padding: 1rem;
+	grid-template-columns: 1fr 2fr;
 }
 /* #section--exterior-steps .step:last-child {} */
 #section--exterior-steps .step :global(svg) {
   justify-self: center;
-  width: 100%;
+  /* width: 100%; */
 }
 #section--exterior-steps .step .text { margin-right: 1rem; }
 /* #section--exterior-steps .step .text h3 {} */
