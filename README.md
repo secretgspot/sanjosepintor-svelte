@@ -38,6 +38,6 @@ Site rebuilt using svelte.
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
 - [ ] Header Menu for larger than tablet
-- [x] Redo Commercial-Details steps (by removing some items and chaing to local suppliers brands)
+- [x] Toucan colors
 
 ### Notes

@@ -34,7 +34,7 @@
     width: 45px;
     height: 72px;
     display: block;
-    background: #333;
+    background: var(--bg-inverted);
     border-radius: 35px 0 30px 0;
   }
   #toucan .t::after {
@@ -44,7 +44,7 @@
     width: 23px;
     height: 42px;
     display: block;
-    background: #FCBB42;
+    background: var(--color-orange);
     border-radius: 50px 0 0 50px;
     content: "";
   }
@@ -57,7 +57,7 @@
     height: 25px;
     display: block;
     border-radius: 50%;
-    background: white;
+    background: var(--color-white);
   }
   #toucan .o::after {
     transition: all 0.3s;
@@ -68,7 +68,7 @@
     width: 16px;
     height: 16px;
     display: block;
-    background: #333;
+    background: var(--color-black);
     border-radius: 50%;
     content: "";
   }
@@ -80,7 +80,7 @@
     width: 60px;
     height: 20px;
     display: block;
-    background: #967ADC;
+    background: var(--color-purple);
     border-radius: 0 40px 0 0;
   }
   #toucan .u::after, #toucan .u::before {
@@ -92,11 +92,11 @@
   }
   #toucan .u::before {
     left: 0;
-    background: #E9573F;
+    background: var(--color-red);
   }
   #toucan .u::after {
     left: 20px;
-    background: #4FC1E9;
+    background: var(--color-blue);
   }
   #toucan .c {
     transition: all 0.3s, left 0.4s;
@@ -107,7 +107,8 @@
     width: 60px;
     height: 9px;
     display: block;
-    background: #7652d1;
+    background: var(--color-purple);
+    filter: brightness(1.2);
   }
   #toucan .c::after, #toucan .c::before {
     position: absolute;
@@ -118,11 +119,11 @@
   }
   #toucan .c::before {
     left: 0;
-    background: #dc3519;
+    background: var(--color-red);
   }
   #toucan .c::after {
     left: 20px;
-    background: #22b1e3;
+    background: var(--color-blue);
   }
   #toucan .a {
     transform: rotate(-65deg);
@@ -132,7 +133,7 @@
     width: 35px;
     height: 70px;
     display: block;
-    background: #333;
+    background: var(--bg-inverted);
     border-radius: 200px 0 0 200px;
   }
   #toucan .n {
@@ -142,7 +143,7 @@
     left: 30px;
     display: block;
     border: 14px solid transparent;
-    border-bottom: 40px solid #333;
+    border-bottom: 40px solid var(--bg-inverted);
   }
 
   @keyframes wink {

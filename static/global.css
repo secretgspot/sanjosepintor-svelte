@@ -34,8 +34,10 @@
 		--txt-inverted: hsl(215, 27%, 19%);
 		--border: var(--bg-tertiary);
 		--shadow: hsla(0, 0%, 0%, 0.81);
+		--color-orange: hsla(39, 97%, 62%, 1);
 		--color-blue: hsla(216, 70%, 62%, 1);
 		--color-red: hsla(333, 81%, 54%, 1);
+		--color-purple: hsla(257, 58%, 67%, 1);
 		--color-danger: hsl(0, 88%, 41%);
 		--color-success: hsl(161, 34%, 55%);
 		--link: hsla(216, 70%, 81%, 1);
@@ -57,8 +59,10 @@
 		--txt-inverted: hsl(38, 11%, 90%);
 		--border: var(--bg-tertiary);
 		--shadow: hsla(0, 0%, 0%, 0.36);
+		--color-orange: hsla(39, 97%, 62%, 1);
 		--color-blue: hsla(216, 70%, 62%, 1);
 		--color-red: hsla(333, 81%, 45%, 1);
+		--color-purple: hsla(257, 58%, 67%, 1);
 		--color-danger: hsl(0, 88%, 41%);
 		--color-success: hsl(161, 34%, 55%);
 		--link: hsla(216, 54%, 36%, 1);
