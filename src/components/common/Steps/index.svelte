@@ -5,7 +5,7 @@
 </script>
 
 <section id="section--steps" class="content-wrapper">
-  <!-- <h3 flex-xs="grow">{$_("component.steps.title")}</h3> -->
+  <!-- <h3>{$_("component.steps.title")}</h3> -->
   <div class="steps">
     <div class="step">
       <SvgIcon type="step_estimate" size="54" />
@@ -44,6 +44,7 @@
 <style>
 #section--steps {
   user-select: none;
+  padding: 3rem 0;
 }
 
 #section--steps .steps {
@@ -58,10 +59,7 @@
 	grid-row-gap: 1rem;
 }
 
-#section--steps .step:last-child {}
 #section--steps .step :global(svg) {
-  /* width: 100%;
-  height: fit-content; */
   justify-self: center;
 }
 #section--steps .step .text {
@@ -69,6 +67,4 @@
   cursor: default;
   padding-right: 2rem;
 }
-#section--steps .step .text h3 {}
-#section--steps .step .text p {}
 </style>

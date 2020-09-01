@@ -4,9 +4,9 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--powerwash" class="content-wrapper" layout="row" layout-xs="column">
-  <div class="left-side" flex="auto"></div>
-  <div class="right-side" flex="auto" flex-gt-xs="50">
+<section id="section--powerwash" class="content-wrapper">
+  <div class="left-side"></div>
+  <div class="right-side">
     <div class="text">
       <h2>{$_("component.powerwash.title")}</h2>
       <p>{$_("component.powerwash.p")}</p>
@@ -45,6 +45,6 @@
 }
 
 #section--powerwash .right-side .text {
-  margin: 1em;
+  margin: 1rem 3em;
 }
 </style>

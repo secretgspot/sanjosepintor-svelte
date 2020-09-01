@@ -272,6 +272,7 @@
   align-items: center;
   order: 0;
   flex: 1 1 100%;
+  padding: 2em 1em;
 }
 #section--calculator .right-side fieldset {
   border: 0;

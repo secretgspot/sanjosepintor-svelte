@@ -4,14 +4,14 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--moving" class="content-wrapper" layout="row" layout-xs="column">
-  <div class="left-side" flex="auto" flex-gt-xs="50">
+<section id="section--moving" class="content-wrapper">
+  <div class="left-side">
     <div class="text">
       <h2 class="white">{$_("component.moving.title")}</h2>
       <p>{$_("component.moving.p")}</p>
     </div>
   </div>
-  <div class="right-side" flex="auto"></div>
+  <div class="right-side"></div>
 </section>
 
 <style>
@@ -36,7 +36,7 @@
 }
 
 #section--moving .left-side .text {
-  margin: 1em;
+  margin: 1rem 3em;
 }
 
 #section--moving .right-side {

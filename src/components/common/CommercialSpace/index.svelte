@@ -39,9 +39,8 @@
 }
 
 #section--commercial .left-side .text {
-  padding: 0 1em;
   color: var(--txt-inverted);
-  margin: 1em;
+  margin: 1rem 3em;
 }
 #section--commercial .left-side h2 {
   cursor: default;

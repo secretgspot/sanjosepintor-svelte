@@ -39,6 +39,7 @@
   user-select: none;
   display: grid;
   border-bottom: 1px solid var(--border);
+  padding: 0 0 3rem 0;
 }
 
 @media (min-width: 768px) {

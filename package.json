@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "sjo_pintor",
+  "description": "SanJose Pintor website in Svelte + Sapper",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

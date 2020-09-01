@@ -37,6 +37,7 @@ Site rebuilt using svelte.
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
-- [x] Bug reintroduded for Steps section with svg numbers alignments on mobile
+- [ ] Header Menu for larger than tablet
+- [x] Cleanup Tablets+ layout
 
 ### Notes

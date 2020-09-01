@@ -5,22 +5,18 @@
 </script>
 
 <section id="contact" class="content-wrapper">
-  <div class="contact-info" layout="column" layout-align="center start">
-    <!-- <h2>{$_("component.contact_us.title")}</h2> -->
-    <h2>{$_("component.contact_us.sub_title")}</h2>
-    <span class="contact-option phone">
-      <!-- <img src="@/assets/images/telephone.svg" alt="phone-icon"> -->
-      <SvgIcon type="phone" size="36" />
-      <a href="tel:{$siteSettings.phone}" title="Phone">{ $siteSettings.phone }</a>
-    </span>
-    <span class="contact-option email">
-      <!-- <img src="@/assets/images/email.svg" alt="email-icon"> -->
-      <SvgIcon type="email" size="36" />
-      <a href="mailto:{$siteSettings.email}" title="email">{ $siteSettings.email }</a>
-    </span>
-
-    <div class="grouped">
-      <!-- <h2>{$_("component.contact_us.sub_title")}</h2> -->
+  <div class="left-side"></div>
+  <div class="right-side">
+    <div class="text">
+      <h2>{$_("component.contact_us.sub_title")}</h2>
+      <div class="contact-option phone">
+        <SvgIcon type="phone" size="36" />
+        <a href="tel:{$siteSettings.phone}" title="Phone">{ $siteSettings.phone }</a>
+      </div>
+      <div class="contact-option email">
+        <SvgIcon type="email" size="36" />
+        <a href="mailto:{$siteSettings.email}" title="email">{ $siteSettings.email }</a>
+      </div>
       <p>{$_("component.contact_us.p")}</p>
     </div>
   </div>
@@ -28,19 +24,41 @@
 
 <style>
 #contact {
+  user-select: none;
   display: grid;
-  background: var(--bg-inverted);
-	color: var(--txt-inverted);
+	grid-template-rows: 1fr 1fr;
 }
-#contact .contact-info {
-  display: grid;
-	margin: 3em 2em;
+@media screen and (min-width: 768px) {
+  #contact {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/* #contact .contact-option {} */
+#contact .left-side {
+  flex: 1 0 auto;
+  min-height: 300px;
+  background-image: url("/assets/backgrounds/contacts.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#contact .right-side {
+  background: var(--bg-inverted);
+	color: var(--txt-inverted);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact .right-side .text {
+  margin: 1rem 3em;
+}
+
 #contact .contact-option :global(svg) {
   vertical-align: middle;
-	margin: 1rem;
+	margin: 1em;
 }
 #contact a {
   font-size: 111%;
@@ -48,12 +66,6 @@
 }
 #contact a:hover {
   color: var(--link_hover);
-}
-/* #contact h2, #contact h2 {} */
-#contact .grouped {
-  margin-top: 1em;
-}
-#contact .grouped p {
-  margin-top: 0;
+  filter: brightness(3);
 }
 </style>
