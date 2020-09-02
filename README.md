@@ -37,7 +37,7 @@ Site rebuilt using svelte.
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
-- [ ] Header Menu for larger than tablet
-- [x] Toucan colors
+- [x] Google Adsense link
+- [x] Header Menu for larger than tablet
 
 ### Notes

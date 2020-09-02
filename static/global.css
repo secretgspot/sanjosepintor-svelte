@@ -118,7 +118,7 @@ a {
 /* This will render section elements when they come into view instead of at paint */
 [id^="section--"] {
 	/* border: 10px solid red; */
-	content-visibility: auto;
+	/* content-visibility: auto; */
 }
 
 @media screen and (min-width: 1025px) {

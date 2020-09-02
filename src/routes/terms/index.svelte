@@ -59,7 +59,7 @@
 }
 @media screen and (min-width: 768px) {
   #section--terms-service .main-content {
-    margin: 9em 3em 3em 3em;
+    margin: 18em 3em 3em 3em;
   }
 }
 #section--terms-service h2 {
