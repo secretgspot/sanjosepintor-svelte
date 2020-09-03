@@ -104,6 +104,7 @@
 @media screen and (min-width: 768px) {
 	.main-nav .nav-item {
 		padding: 1rem 1rem;
+		font-size: 120%;
 	}
 	.main-nav .nav-item.mobile {
 		display: none;
