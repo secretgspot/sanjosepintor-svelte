@@ -19,9 +19,7 @@
 
 <article id="home" class="home">
   <section id="section--home-hero">
-
     <div class="content-wrapper hero">
-
       <Header/>
 
       <div class="text">
@@ -34,20 +32,15 @@
         <span class="estimate-amount price">{ $siteSettings.price }</span>
         <span class="size">{$_("page.home.hero.button.size")}<sup>2</sup></span>
       </Button>
-      <!-- <a href="/booking" tag="button" class="md-button md-raised input-submit md-primary" flex-xs="grow">
-        <span>{$_("page.home.hero.button.text")}</span>
-        <span class="estimate-amount price">{ $siteSettings.price }</span>
-        <span class="size">{$_("page.home.hero.button.size")}<sup>2</sup></span>
-      </a> -->
-    </div>
 
-    <!-- Meta Information in header -->
-    <div class="meta-info" hide-xs>
-      <ul>
-        <li><SvgIcon type="star" size="18" />{$_("page.home.hero.bonded")}</li>
-        <li><SvgIcon type="star" size="18" />{$_("page.home.hero.trained")}</li>
-        <li><SvgIcon type="star" size="18" />{$_("page.home.hero.eco")}</li>
-      </ul>
+      <!-- Meta Information in header -->
+      <div class="meta-info" hide-xs>
+        <ul>
+          <li><SvgIcon type="star" size="18" />{$_("page.home.hero.bonded")}</li>
+          <li><SvgIcon type="star" size="18" />{$_("page.home.hero.trained")}</li>
+          <li><SvgIcon type="star" size="18" />{$_("page.home.hero.eco")}</li>
+        </ul>
+      </div>
     </div>
 
     <!-- BG Gradient -->

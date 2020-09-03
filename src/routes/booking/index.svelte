@@ -153,9 +153,7 @@
 
 <article id="booking">
   <section id="section--booking-hero">
-
     <div class="content-wrapper hero">
-
       <Header/>
 
       {#if !message}

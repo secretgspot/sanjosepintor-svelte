@@ -37,5 +37,7 @@ Site rebuilt using svelte.
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
+- [ ] Rework Hero pages.  Header outside of content and content properly spaced. Font appears too large
+- [x] updated and fixed export issue. (sapper still won't work with 0.28.0)
 
 ### Notes

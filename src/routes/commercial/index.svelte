@@ -18,18 +18,13 @@
 
 <article id="commercial-painting" class="commercial">
   <section id="section--commercial-painting-hero">
-
     <div class="content-wrapper hero">
-
       <Header/>
 
       <div class="text">
         <h1>{$_("page.commercial.hero.title")}</h1>
-
         <p>{$_("page.commercial.hero.p")}</p>
-
         <Button color="primary" mode="needy" href="/booking">{$_("page.commercial.hero.button")}</Button>
-        <!-- <a href="/booking" tag="button" class="md-button md-raised input-submit md-primary" flex-xs="grow">{$_("page.commercial.hero.button")}</a> -->
       </div>
     </div>
 

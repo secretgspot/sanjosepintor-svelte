@@ -20,18 +20,13 @@
 
 <article id="residential-painting" class="residential">
   <section id="section--residential-painting-hero">
-
     <div class="content-wrapper hero">
-
       <Header/>
 
       <div class="text">
         <h1>{$_("page.residential.hero.title")}</h1>
-
         <p>{$_("page.residential.hero.p")}</p>
-
         <Button color="primary" mode="needy" href="/booking">{$_("page.residential.hero.button")}</Button>
-        <!-- <a href="/booking" tag="button" class="md-button md-raised input-submit md-primary" flex-xs="grow">{$_("page.residential.hero.button")}</a> -->
       </div>
     </div>
 
