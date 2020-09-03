@@ -24,8 +24,13 @@
   margin: 0.2em;
   border-radius: 3px;
   line-height: 1;
+	cursor: pointer;
+	color: var(--link);
+}
+.language span:hover {
+	color: var(--link_hover);
 }
 .selected {
-	border: 1px solid;
+	border: 1px solid var(--color-red);
 }
 </style>
