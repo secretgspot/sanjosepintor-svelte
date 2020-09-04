@@ -38,7 +38,7 @@ Site rebuilt using svelte.
 - [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
 - [ ] Rework Hero pages.  Header outside of content and content properly spaced. Font appears too large
-- [ ] booking form success btn color, radio border color
+- [x] booking form success btn color, radio border color
 - [x] language selector cursor
 - [x] Header links size increase on larger screens
 - [x] updated and fixed export issue. (sapper still won't work with 0.28.0)

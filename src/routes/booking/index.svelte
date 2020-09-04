@@ -388,7 +388,7 @@
         analytics-on="click"
         analytics-event="Form reset"
         on:click="{cancelForm}">{$_("page.booking.form.button.reset")}</Button>
-      <Button type="submit" bind:this="{btnSubmit}"
+      <Button type="submit" color="primary" bind:this="{btnSubmit}"
         analytics-on="click"
         analytics-event="Form submitted"
         disabled={isProcessing}>{$_("page.booking.form.button.submit")}</Button>
@@ -480,7 +480,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--bg-inverted);
   border-radius: 50%;
   left: 0;
   top: 0;
