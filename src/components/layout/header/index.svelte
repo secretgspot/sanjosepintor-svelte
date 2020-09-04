@@ -10,9 +10,9 @@
 </script>
 
 <header id="siteheader" class="header" class:open="{showMobileMenu}">
-	<div class="logo-wrapper" layout-align="start center">
+	<div class="logo-wrapper">
 		<SvgLogo size="81" on:click="{() => goto('/')}" />
-		<div class="extra-meta" layout="column">
+		<div class="extra-meta">
 			<span class="pink phone">{$siteSettings.phone}</span>
       <span class="towns">{$siteSettings.cities}</span>
 		</div>

@@ -26,7 +26,6 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
 #section--powerwash .left-side {
   flex: 1 0 auto;
   min-height: 300px;
@@ -35,7 +34,6 @@
   background-size: cover;
   background-position: center center;
 }
-
 #section--powerwash .right-side {
 	background-color: var(--bg-secondary);
 	color: var(--txt-primary);
@@ -43,7 +41,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 #section--powerwash .right-side .text {
   margin: 1rem 3em;
 }

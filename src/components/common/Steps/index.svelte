@@ -46,19 +46,16 @@
   user-select: none;
   padding: 3rem 0;
 }
-
 #section--steps .steps {
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-row-gap: 2rem;
 }
-
 #section--steps .step {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-row-gap: 1rem;
 }
-
 #section--steps .step :global(svg) {
   justify-self: center;
 }

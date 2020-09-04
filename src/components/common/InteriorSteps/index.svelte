@@ -84,18 +84,13 @@
     column-gap: 1rem;
   }
 }
-
 #section--interior-steps .step {
   display: grid;
 	padding: 1rem;
 	grid-template-columns: 1fr 2fr;
 }
-/* #section--interior-steps .step:last-child {} */
 #section--interior-steps .step :global(svg) {
   justify-self: center;
-  /* width: 100%; */
 }
 #section--interior-steps .step .text { margin-right: 1rem; }
-/* #section--interior-steps .step .text h3 {} */
-/* #section--interior-steps .step .text p {} */
 </style>

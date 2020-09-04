@@ -10,10 +10,8 @@
 </script>
 
 <footer id="sitefooter" class="content-wrapper grid-container">
-
 	<div class="top-bar">
     <SvgLogo footer="{true}" on:click="{() => goto('/')}" />
-		<!-- <a href="/" :alt="company" tag="img" src="/assets/images/footer-logo.svg" class="svg logo"/> -->
 
 		<Toucan scale="0.3"></Toucan>
 
@@ -22,7 +20,6 @@
       <SvgIcon type="scraper" size="27" />
       <SvgIcon type="water_bucket" size="27" />
       <SvgIcon type="paint_roller" size="27" />
-      <!-- <SvgIcon type="paint_bucket" size="27" /> -->
 		</div>
 	</div><!-- End of Top Bar -->
 

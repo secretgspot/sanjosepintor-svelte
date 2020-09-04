@@ -111,9 +111,9 @@
 </script>
 
 <section id="section--calculator" class="content-wrapper">
-  <div theme="dark" class="left-side">
+  <div class="left-side">
 
-    <fieldset layout="column" layout-align="center stretch">
+    <fieldset>
       <legend>{$_("component.calc.area.title")}
         <select bind:value="{unitsType}" aria-label="units">
           <option value="feet">{$_("component.calc.title.feet")}</option>
@@ -151,7 +151,7 @@
     <fieldset>
       <legend>{$_("component.calc.extra.title")}</legend>
 
-      <div flex="grow" class="input__wrapper">
+      <div class="input__wrapper">
         <label class="label-form">{$_("component.calc.extra.paint_quality.title")}</label>
         <select bind:value="{quality}" aria-label="quality">
           <option value="luxury">{$_("component.calc.extra.paint_quality.luxury")}</option>

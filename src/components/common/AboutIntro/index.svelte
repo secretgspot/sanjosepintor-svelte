@@ -56,17 +56,11 @@
   cursor: default;
 }
 
-/* #section--about-intro .side-left h2 {
-  margin: 1em 0 0 0;
-  text-align: left;
-} */
-
 #section--about-intro .side-left ul.cities {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
-  /* box-shadow: 0px 1px 0px var(--shadow); */
   padding: 1em 0;
   margin: 0;
 }
@@ -82,7 +76,6 @@
   color: var(--color-blue);
 }
 #section--about-intro .side-left :global(.guarantee-seal) {
-  /* display: none; */
   margin: 2rem auto 1rem;
 }
 #section--about-intro .side-right {

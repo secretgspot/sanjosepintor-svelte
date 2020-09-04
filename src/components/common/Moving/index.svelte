@@ -26,7 +26,6 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
 #section--moving .left-side {
 	background-color: var(--bg-secondary);
 	color: var(--txt-primary);
@@ -34,11 +33,9 @@
 	justify-content: center;
 	align-items: center;
 }
-
 #section--moving .left-side .text {
   margin: 1rem 3em;
 }
-
 #section--moving .right-side {
   flex: 1 0 auto;
   min-height: 300px;

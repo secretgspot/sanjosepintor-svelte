@@ -73,7 +73,6 @@
   margin: 2em;
   flex: 1 1 auto;
 }
-
 #section--exterior-steps h2 {
   margin: 2em 0 auto;
 }
@@ -89,18 +88,13 @@
     column-gap: 1rem;
   }
 }
-
 #section--exterior-steps .step {
   display: grid;
 	padding: 1rem;
 	grid-template-columns: 1fr 2fr;
 }
-/* #section--exterior-steps .step:last-child {} */
 #section--exterior-steps .step :global(svg) {
   justify-self: center;
-  /* width: 100%; */
 }
 #section--exterior-steps .step .text { margin-right: 1rem; }
-/* #section--exterior-steps .step .text h3 {} */
-/* #section--exterior-steps .step .text p {} */
 </style>

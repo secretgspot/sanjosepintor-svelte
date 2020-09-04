@@ -34,7 +34,7 @@
       </Button>
 
       <!-- Meta Information in header -->
-      <div class="meta-info" hide-xs>
+      <div class="meta-info">
         <ul>
           <li><SvgIcon type="star" size="18" />{$_("page.home.hero.bonded")}</li>
           <li><SvgIcon type="star" size="18" />{$_("page.home.hero.trained")}</li>

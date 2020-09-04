@@ -179,7 +179,7 @@
   {#if !message}
   <form bind:this="{form}" id="gform" class="content-wrapper" name="quoteForm"
         method="post"
-        action="https://SSSscript.google.com/macros/s/AKfycbwvVjXFteNsBZkRNCMfIRFMUjAfTjGdsxfrAMeejgMXz3PvUm8/exec"
+        action="https://script.google.com/macros/s/AKfycbwvVjXFteNsBZkRNCMfIRFMUjAfTjGdsxfrAMeejgMXz3PvUm8/exec"
         novalidate="true">
 
     <!-- QUESTION Where would you like painting? -->

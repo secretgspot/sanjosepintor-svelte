@@ -2,12 +2,9 @@
   import { _ } from 'svelte-i18n';
 </script>
 
-<section id="section--featured" class="content-wrapper" layout="column">
+<section id="section--featured" class="content-wrapper">
 	<h4>{$_("component.featured_in.title")}</h4>
-	<div class="logo-wrapper"
-		layout="row"
-		layout-align="space-around center"
-		layout-wrap>
+	<div class="logo-wrapper">
 		<img src="assets/sponsors/sponsor_lanacion.png" alt="la nacion">
 		<img src="assets/sponsors/sponsor_lateja.png" alt="la teja">
 		<img src="assets/sponsors/sponsor_teletica.png" alt="teletica">

@@ -35,8 +35,9 @@ Site rebuilt using svelte.
 - [ ] Booking form, simplify js, check css
 - [ ] Translate Privacy and Terms pages
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
-- [ ] Cleanup commented out code in places like booknow and other locations, remove unused components
+- [x] Cleanup commented out code in places like booknow and other locations, remove unused components
 - [ ] Lag issue on mobile for image compare.
+- [x] removed gads from template for now
 - [x] Rework Hero pages.
 - [x] updated and fixed export issue. (sapper still won't work with 0.28.0)
 

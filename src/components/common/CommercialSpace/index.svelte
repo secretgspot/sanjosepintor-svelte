@@ -4,10 +4,8 @@
   import SvgIcon from '../../basic/SvgIcon/index.svelte';
 </script>
 
-<section id="section--commercial" class="content-wrapper" layout="row" layout-xs="column">
-  <div class="left-side"
-    layout="column" layout-align="center center"
-    flex="auto" flex-gt-xs="50" flex-order-gt-xs="-1">
+<section id="section--commercial" class="content-wrapper">
+  <div class="left-side">
     <div class="text">
       <h2 class="white">{$_("component.commercial.title")}</h2>
       <a href="/commercial" class="cta-link white" title="Commercial painting details">
@@ -16,7 +14,7 @@
       </a>
     </div>
   </div>
-  <div class="right-side" flex="auto"></div>
+  <div class="right-side"></div>
 </section>
 
 <style>
@@ -53,7 +51,6 @@
   margin-bottom: 1em;
   display: block;
 }
-#section--commercial .left-side a:hover {}
 #section--commercial .left-side a :global(svg) {
   margin-right: 1rem;
 }
@@ -65,5 +62,4 @@
   background-size: cover;
   background-position: center center;
 }
-
 </style>

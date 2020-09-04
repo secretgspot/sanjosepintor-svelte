@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { siteSettings } from '../../../store.js';
   import { _ } from 'svelte-i18n';
   import Zooming from 'zooming';
   import SvgLogo from '../../basic/SvgLogo/index.svelte';
@@ -30,11 +31,6 @@
 </script>
 
 <section id="section--instagram-feed" class="content-wrapper">
-  <!-- <div class="text" ng-hide="offline">
-    <h3>{$_("component.instagram_feed.title")}</h3>
-    <p>{$_("component.instagram_feed.p")} <a :href="instagurl" target="_blank" rel="noreferrer">feed</a>.</p>
-  </div> -->
-
   {#await promise}
     <div class="placeholder">
       <SvgLogo size="63" animated="{true}"/>
@@ -52,14 +48,14 @@
     {/each}
     </div>
   {:catch error}
-    <p style="color: red">{error.message}</p>
+    <p class="error">{error.message}. <a href="{$siteSettings.instagurl}" target="_blank" rel="noreferrer external">{$_("component.instagram_feed.p")}</a></p>
   {/await}
 </section>
 
 <style>
 #section--instagram-feed {
   padding: 3rem 0;
-  content-visibility: initial;
+  /* content-visibility: initial; */
 }
 #section--instagram-feed .images {
   display: grid;
@@ -79,5 +75,9 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 333px;
+}
+#section--instagram-feed .error {
+  color: var(--color-danger);
+  text-align: center;
 }
 </style>

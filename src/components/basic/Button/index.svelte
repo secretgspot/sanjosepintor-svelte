@@ -12,10 +12,8 @@
     font: inherit;
     border: 1px solid var(--border);
     background: transparent;
-    /* width: 369px; */
     height: 81px;
     padding: 0.5rem 1rem;
-    /* color: var(--txt-primary); */
     color: currentColor;
     border-radius: var(--border-radius);
     box-shadow: 0px 1px 1px var(--shadow);
@@ -114,19 +112,6 @@
     color: var(--color-white);
   }
 
-  /* ORANGE  */
-  .orange {
-    background: inherit;
-    border-color: var(--color-orange);
-    color: var(--color-orange);
-  }
-  .orange:hover,
-  .orange:active {
-    background: var(--color-orange);
-    border-color: var(--color-orange);
-    color: var(--color-white);
-  }
-
  /* PRIMARY  */
   .primary {
     background: var(--color-blue);
@@ -186,37 +171,6 @@
 		10%  { transform: skewX(-45deg) translateX(100%); }
 		100% { transform: skewX(-45deg) translateX(100%); }
 	}
-
-  /* CLOSE */
-  .close {
-    background: transparent;
-    /* color: #cf0056; */
-    box-shadow: none;
-    padding: 0 0;
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 63px;
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .close:hover,
-  .close:active {
-    background: var(--color-black);
-    color: var(--color-white);
-    box-shadow: none;
-  }
-
-  .close:disabled,
-  .close:disabled:hover,
-  .close:disabled:active {
-    background: transparent;
-    color: var(--txt-secondary);
-  }
 </style>
 
 {#if href}
