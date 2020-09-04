@@ -67,4 +67,7 @@
   cursor: default;
   padding-right: 2rem;
 }
+#section--steps .step .text h3 {
+  font-size: 150%;
+}
 </style>

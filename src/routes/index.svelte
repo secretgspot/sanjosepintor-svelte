@@ -128,6 +128,8 @@
 @media screen and (min-width: 768px) {
   #home #section--home-hero .meta-info {
     display: block;
+    position: absolute;
+    bottom: 0;
   }
 }
 #home #section--home-hero .meta-info ul {
