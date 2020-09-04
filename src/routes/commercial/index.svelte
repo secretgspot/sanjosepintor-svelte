@@ -89,6 +89,7 @@
   }
   #commercial-painting #section--commercial-painting-hero .text :global(a) {
     margin-top: 2rem;
+    display: inline-flex;
   }
 }
 #commercial-painting :global(#section--beforeafter) {

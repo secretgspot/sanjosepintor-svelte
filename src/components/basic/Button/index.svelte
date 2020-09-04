@@ -20,7 +20,7 @@
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.2px; */
     flex: 0 1 auto;
     display: flex;
     justify-content: center;

@@ -541,7 +541,7 @@
 }
 #booking .actions {
   display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	border: 0;
 	margin: 3em 2em;
 }

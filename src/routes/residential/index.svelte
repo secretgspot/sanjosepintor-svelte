@@ -95,6 +95,7 @@
   }
   #residential-painting #section--residential-painting-hero .text :global(a) {
     margin-top: 2rem;
+    display: inline-flex;
   }
 }
 #residential-painting :global(#section--beforeafter) {
