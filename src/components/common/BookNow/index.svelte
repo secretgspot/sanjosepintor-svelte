@@ -26,4 +26,7 @@
 	margin: 3rem 1rem;
 	text-align: center;
 }
+#section--booking :global(a) {
+	padding: 1rem 3rem;
+}
 </style>

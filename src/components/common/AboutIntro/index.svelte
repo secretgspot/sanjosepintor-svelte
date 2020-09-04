@@ -92,6 +92,11 @@
 #section--about-intro .side-right :global(a) {
   margin-top: auto;
 }
+@media screen and (min-width: 768px) {
+  #section--about-intro .side-right :global(a) {
+    margin-top: 2rem;
+  }
+}
 #section--about-intro .side-right .meta-info {
   margin: 2rem 0;
 }

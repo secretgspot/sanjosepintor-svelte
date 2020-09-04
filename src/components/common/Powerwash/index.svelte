@@ -44,4 +44,7 @@
 #section--powerwash .right-side .text {
   margin: 1rem 3em;
 }
+#section--powerwash .right-side .text h2 {
+  font-weight: bold;
+}
 </style>

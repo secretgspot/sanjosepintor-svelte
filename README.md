@@ -37,6 +37,7 @@ Site rebuilt using svelte.
 - [ ] Figure out what are _layout warnings for waitLocale and segment props being unknown
 - [ ] Lag issue on mobile for image compare.
 - [x] buttons adjusted in hero pages and booking action
+- [x] fonts adjustments
 
 ## Deployment
 

@@ -68,6 +68,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
+  font-size: 110%;
 }
 #section--exterior-steps .head-text {
   margin: 2em;
@@ -75,6 +76,7 @@
 }
 #section--exterior-steps h2 {
   margin: 2em 0 auto;
+  font-weight: bold;
 }
 #section--exterior-steps .steps {
 	display: grid;
@@ -87,6 +89,9 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
   }
+}
+#section--exterior-steps h3 {
+  font-weight: bold;
 }
 #section--exterior-steps .step {
   display: grid;

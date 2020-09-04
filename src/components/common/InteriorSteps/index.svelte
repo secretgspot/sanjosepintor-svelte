@@ -63,6 +63,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
+  font-size: 110%;
 }
 #section--interior-steps .head-text {
   margin: 2em;
@@ -71,6 +72,7 @@
 
 #section--interior-steps h2 {
   margin: 2em 0 auto;
+  font-weight: bold;
 }
 #section--interior-steps .steps {
 	display: grid;
@@ -83,6 +85,9 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
   }
+}
+#section--interior-steps h3 {
+  font-weight: bold;
 }
 #section--interior-steps .step {
   display: grid;

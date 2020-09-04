@@ -56,6 +56,11 @@
 	margin: 3em 0;
 	align-items: center;
 }
+@media screen and (min-width: 768px) {
+  #section--residential-details .content-wrap {
+    padding: 3rem;
+  }
+}
 #section--residential-details .left-side,#section--residential-details .right-side {
 	margin: 0 2em;
 }

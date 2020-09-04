@@ -53,7 +53,7 @@
 }
 
 #contact .right-side .text {
-  margin: 1rem 3em;
+  margin: 2rem 3em;
 }
 
 #contact .contact-option :global(svg) {

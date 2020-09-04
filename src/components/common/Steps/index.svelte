@@ -56,6 +56,11 @@
 	grid-template-columns: 1fr 2fr;
 	grid-row-gap: 1rem;
 }
+@media screen and (min-width: 768px) {
+  #section--steps .step {
+    grid-template-columns: 1fr 3fr;
+  }
+}
 #section--steps .step :global(svg) {
   justify-self: center;
 }
@@ -65,6 +70,10 @@
   padding-right: 2rem;
 }
 #section--steps .step .text h3 {
-  font-size: 150%;
+  font-size: 130%;
+  font-weight: bold;
+}
+#section--steps .step .text p {
+  font-size: 110%;
 }
 </style>

@@ -78,18 +78,21 @@
   margin: 2em;
   text-align: left;
 }
+#commercial-painting #section--commercial-painting-hero .text h1 {
+  font-weight: bold;
+}
 @media screen and (min-width: 768px) {
   #commercial-painting #section--commercial-painting-hero .text {
     margin: 6em;
     font-size: 130%;
   }
   #commercial-painting #section--commercial-painting-hero .text h1 {
-    font-weight: bold;
     margin-bottom: 2rem;
   }
   #commercial-painting #section--commercial-painting-hero .text :global(a) {
     margin-top: 2rem;
     display: inline-flex;
+    padding: 1rem 3rem;
   }
 }
 #commercial-painting :global(#section--beforeafter) {

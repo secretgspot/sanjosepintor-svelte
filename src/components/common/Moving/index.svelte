@@ -36,6 +36,9 @@
 #section--moving .left-side .text {
   margin: 1rem 3em;
 }
+#section--moving .left-side .text h2 {
+  font-weight: bold;
+}
 #section--moving .right-side {
   flex: 1 0 auto;
   min-height: 300px;

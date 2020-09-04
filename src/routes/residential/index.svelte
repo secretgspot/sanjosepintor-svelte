@@ -84,18 +84,21 @@
   margin: 2em;
   text-align: left;
 }
+#residential-painting #section--residential-painting-hero .text h1 {
+  font-weight: bold;
+}
 @media screen and (min-width: 768px) {
   #residential-painting #section--residential-painting-hero .text {
     margin: 6em;
     font-size: 130%;
   }
   #residential-painting #section--residential-painting-hero .text h1 {
-    font-weight: bold;
     margin-bottom: 2rem;
   }
   #residential-painting #section--residential-painting-hero .text :global(a) {
     margin-top: 2rem;
     display: inline-flex;
+    padding: 1rem 3rem;
   }
 }
 #residential-painting :global(#section--beforeafter) {
