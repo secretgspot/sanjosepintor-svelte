@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { _ } from 'svelte-i18n';
 	export let status;
 	export let error;
@@ -36,4 +36,55 @@
 
 {#if dev && error.stack}
 	<pre>{error.stack}</pre>
-{/if}
+{/if} -->
+
+<script>
+	import { _ } from 'svelte-i18n';
+	import Header from '../components/layout/header/index.svelte';
+	export let status;
+	export let error;
+
+	const dev = process.env.NODE_ENV === 'development';
+</script>
+
+<style>
+	.error-wrapper {
+		display: grid;
+		min-height: 60vh;
+		padding-top: 6rem;
+	}
+	.error-group {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+	}
+	.error-group h1 {
+		margin: 0 1rem 0 0;
+		font-weight: bold;
+		padding: 0 1rem 0 0;
+		border-right: 3px solid var(--border);
+		color: var(--color-blue);
+	}
+	.error-group div {
+		max-width: 333px;
+	}
+</style>
+
+<svelte:head>
+	<title>{status}</title>
+</svelte:head>
+
+<section class="error-wrapper content-wrapper">
+	<Header/>
+
+	<div class="error-group">
+		<h1>{status}</h1>
+		<div>
+			<p>{error.message}</p>
+			{#if dev && error.stack}
+				<pre>{error.stack}</pre>
+			{/if}
+		</div>
+	</div>
+</section>
