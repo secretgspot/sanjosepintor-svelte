@@ -49,4 +49,9 @@ With Netlify
 > npm run export
 > netlify deploy --dir=__sapper__/export/ --prod
 
+With Vercel (formely Now)
+https://vercel.com/docs/cli#getting-started
+
+> vercel
+
 ### Notes
