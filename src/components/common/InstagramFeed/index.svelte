@@ -68,7 +68,8 @@
 }
 #section--instagram-feed .images .img-zoomable {
 	object-fit: fill;
-	width: 100%;
+  width: 100%;
+  filter: brightness(var(--brightness));
 }
 #section--instagram-feed .placeholder {
 	display: flex;

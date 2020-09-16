@@ -43,9 +43,12 @@
 	align-items: start;
 	z-index: 10;
 }
+#siteheader :global(.logo) {
+  filter: brightness(var(--brightness));
+}
 #siteheader :global(.burger) {
   position: absolute;
-	top: 2rem; right: 2rem;
+	top: 1rem; right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,11 +84,13 @@
 .main-nav {
 	display: none;
 	align-items: center;
-	background: var(--bg-primary);
+	/* background: var(--bg-primary); */
   box-shadow: 0px 3px 1px var(--shadow);
 	margin-top: 1rem;
   border-radius: 1rem;
 	z-index: 10;
+	font-size: 150%;
+	backdrop-filter: blur(9px);
 }
 @media screen and (min-width: 768px) {
 	.main-nav {
@@ -95,6 +100,7 @@
 		box-shadow: none;
 		margin-top: 0;
 		border-radius: 0;
+		font-size: inherit;
 	}
 }
 .main-nav .nav-item {

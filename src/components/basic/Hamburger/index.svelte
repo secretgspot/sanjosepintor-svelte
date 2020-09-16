@@ -21,7 +21,7 @@
 }
 .line {
   fill: none;
-  stroke: var(--bg-inverted);
+  stroke: var(--link);
   stroke-width: 6;
   transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1),
     					stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
