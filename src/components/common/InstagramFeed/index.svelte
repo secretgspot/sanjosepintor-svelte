@@ -70,6 +70,7 @@
 	object-fit: fill;
   width: 100%;
   filter: brightness(var(--brightness));
+  border-radius: 1rem;
 }
 #section--instagram-feed .placeholder {
 	display: flex;
