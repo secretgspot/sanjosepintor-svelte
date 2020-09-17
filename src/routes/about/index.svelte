@@ -67,5 +67,6 @@
 }
 #section--about-us img.company-van {
   max-width: 100%;
+  filter: brightness(var(--brightness));
 }
 </style>
