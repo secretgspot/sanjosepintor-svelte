@@ -41,14 +41,6 @@ Site rebuilt using svelte.
 
 ## Deployment
 
-With Netlify
-
-> npm install netlify-cli -g
-> netlify login
-> netlify init
-> npm run export
-> netlify deploy --dir=__sapper__/export/ --prod
-
 With Vercel (formely Now)
 https://vercel.com/docs/cli#getting-started
 

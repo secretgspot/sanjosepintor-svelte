@@ -1,0 +1,28 @@
+{
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"html.format.indentHandlebars": true,
+	"editor.cursorBlinking": "blink",
+	"editor.cursorStyle": "line",
+	"editor.cursorWidth": 10,
+	"editor.tabSize": 2,
+	"editor.formatOnType": true,
+	"editor.tabCompletion": "on",
+	"editor.formatOnSave": false,
+	"editor.renderIndentGuides": true,
+	"editor.rulers": [
+		90
+	],
+	"files.associations": {
+		"*.svelte": "html"
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/tmp": true,
+		"**/bower_components": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/tmp": true,
+		"**/bower_components": true
+	},
+}
